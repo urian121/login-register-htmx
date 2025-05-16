@@ -1,0 +1,26 @@
+<div class="card shadow">
+    <div class="card-body">
+        <h3 class="card-title mb-4">Crear Cuenta</h3>
+        <form>
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
+            </div>
+            <div class="mb-3">
+                <label for="emailReg" class="form-label">Correo</label>
+                <input type="email" class="form-control" id="emailReg" placeholder="usuario@correo.com">
+            </div>
+            <div class="mb-3">
+                <label for="passReg" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="passReg" placeholder="••••••••">
+            </div>
+            <button type="submit" class="btn btn-success w-100">Registrarse</button>
+        </form>
+
+        <div class="text-center mt-3">
+            <a href="#" hx-get="login-form.html" hx-target="#auth-container" hx-swap="innerHTML swap:300ms settle:400ms">
+                ¿Ya tienes cuenta? Inicia sesión
+            </a>
+        </div>
+    </div>
+</div>

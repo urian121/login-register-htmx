@@ -1,0 +1,21 @@
+#auth-container {
+  position: relative;
+}
+
+/* Animación al salir */
+.htmx-swapping {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+/* Animación al entrar */
+.htmx-added {
+  opacity: 0;
+}
+
+#auth-container > * {
+  opacity: 1;
+  transition: opacity 0.4s ease-in, transform 0.4s ease-in;
+  transform: translateY(0px);
+}

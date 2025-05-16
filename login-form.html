@@ -1,0 +1,22 @@
+<div class="card shadow">
+    <div class="card-body">
+        <h3 class="card-title mb-4">Iniciar Sesión</h3>
+        <form>
+            <div class="mb-3">
+                <label for="emailLogin" class="form-label">Correo</label>
+                <input type="email" class="form-control" id="emailLogin" placeholder="usuario@correo.com">
+            </div>
+            <div class="mb-3">
+                <label for="passLogin" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="passLogin" placeholder="••••••••">
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Ingresar</button>
+        </form>
+
+        <div class="text-center mt-3">
+            <a href="#" hx-get="register-form.html" hx-target="#auth-container" hx-swap="innerHTML swap:300ms settle:400ms">
+                ¿No tienes cuenta? Regístrate
+            </a>
+        </div>
+    </div>
+</div>
